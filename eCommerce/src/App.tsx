@@ -1,10 +1,14 @@
 import React from "react";
+import Sidebar from "./components/Sidebar.tsx";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div>
-      <h1 className="bg-red-500">Hello lord</h1>
-    </div>
+    <Router>
+      <div className="flex h-screen">
+        <Sidebar />
+      </div>
+    </Router>
   );
 }
 
